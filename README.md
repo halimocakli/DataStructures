@@ -1,2 +1,2 @@
 # DataStructures
-Veri yapılarını incelemek üzere C programlama dili ile geliştirilen örnekler
+Veri yapılarını incelemek amacıyla C programlama dili ile geliştirilen küçük-orta ölçekli programlar
