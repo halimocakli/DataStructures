@@ -1,2 +1,2 @@
 # DataStructures
-C programlama dili kullanarak oluşturulan veri yapıları örnekleri
+Veri yapılarını incelemek üzere C programlama dili ile geliştirilen örnekler
