@@ -29,7 +29,7 @@ int main()
 
 	do
 	{
-		printf("\n *********** MENU *********** ...");
+		printf("\n *********** MENU ***********");
 		printf("\n 0- End execution");
 		printf("\n 1- Add node to head");
 		printf("\n 2- Add node to tail");
