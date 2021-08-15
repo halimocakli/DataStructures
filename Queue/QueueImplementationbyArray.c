@@ -29,7 +29,6 @@ void Enqueue(int _data)
 	if (IsFull() == true)
 	{
 		printf("\n STACKOVERFLOW\a\n");
-		return;
 	}
 	else if (IsEmpty() == true)
 	{
@@ -54,8 +53,16 @@ int Dequeue()
 	else
 	{
 		int outgoing = queue[frontIndex];
-		frontIndex = frontIndex + 1;
 
+		if (frontIndex == rearIndex)
+		{
+			frontIndex = -1;
+			rearIndex = -1;
+
+			return outgoing;
+		}
+
+		frontIndex = frontIndex + 1;
 		return outgoing;
 	}
 }
