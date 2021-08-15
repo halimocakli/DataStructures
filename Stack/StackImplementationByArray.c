@@ -1,137 +1,123 @@
+#include <conio.h>
 #include <stdbool.h>
 #include <stdio.h>
 #define SIZE 10
 
-int array[SIZE];
-int top = -1;// Stack konusu içerisinde dizilerle işlem yaparken top değişkeni indis olarak değerlendirildiği için "-1" ile başlattık ki sonraki eleman 0. indis olarak görünsün
+int stackArray[SIZE];
+int top = -1;
 
-bool FullControl()
+bool IsFull()
 {
-  if (top == (SIZE - 1))
-  {
-    return true;
-  }
-
-  else
-  {
-    return false;
-  }
+	if (top == SIZE - 1)
+		return true;
+	else
+		return false;
 }
 
-bool EmptinessControl()
+bool IsEmpty()
 {
-  if (top == -1)
-  {
-    return true;
-  }
-
-  else
-  {
-    return false;
-  }
+	if (top == -1)
+		return true;
+	else
+		return false;
 }
 
-void Push(int number)
+void Push(int data)
 {
-  bool full = FullControl();
-  if (full == true)
-  {
-    printf("\n !!!Stackoverflow!!!\a\n");
-    return;
-  }
-  top++;
-  array[top] = number;
+	bool isFull = IsFull();
+
+	if (isFull == true)
+	{
+		printf("\n STACKOVERFLOW\a\n");
+		return;
+	}
+
+	top = top + 1;
+	stackArray[top] = data;
 }
 
 int Pop()
 {
-  bool empty = EmptinessControl();
-  if (empty == true)
-  {
-    printf("\n Stack halihazirda bos...\a");
-    return 0;
-  }
-  int prevTop = array[top];
-  top--;
+	bool isEmpty = IsEmpty();
 
-  return prevTop;
+	if (isEmpty == true)
+	{
+		printf("\n Stack is empty right now.\n");
+		return 0;
+	}
+
+	int prevTop = stackArray[top];
+	top = top - 1;
+
+	return prevTop;
 }
 
 int Peek()
 {
-  return array[top];
+	return stackArray[top];
 }
 
-void Print()
+void PrintStack()
 {
-  printf("\n");
-  for (int i = top; i >= 0; i--)
-  {
-    printf("\n %d", array[i]);
-  }
-  printf("\n");
+	printf("\n\n----------------");
+
+	int i;
+	for (i = top; i >= 0; i--)
+	{
+		printf("\n %d", stackArray[i]);
+	}
+
+	printf("\n----------------\n\n");
+}
+
+void Menu()
+{
+
+	printf(" \n-------------MENU-------------\n");
+	printf(" 0- EXIT\n");
+	printf(" 1- PUSH\n");
+	printf(" 2- POP\n");
+	printf(" 3- PEEK\n");
+	printf(" 4- PRINT STACK\n");
+	printf(" ------------------------------\n\n");
 }
 
 int main()
 {
-  /*
-   * STACK (YIĞIN) VERİ YAPISI
-   *
-   * Soyut bir veri yapısıdır (Abstract Data Type)
-   * En son giren elemanın ilk olarak çıktığı bir yapıya sahiptir (Last In First Out - LIFO)
-   * Sıklıkla kullanılan bir veri yapısıdır.
-   * Yapılan işlemlerin daha sonra tekrar lazım olacağı durumlarda çokça kullanılır.
-   * Örnek olarak "Ctrl+Z" komutunun işleyişinde Stack mantığı hakimdir.
-   * Stack için hafızadan yer ayırılır. Alana aşımı olması halinde "Stackoverflow" hatası alınır.
-   *
-   * Push => Eleman ekleme işlemi
-   * Pop  => Eleman çıkarma işlemi
-   * Peek => Listenin en tepesindeki elemanı kontrol etmemizi sağlar
-   *
-   * Listenin en üzerindeki eleman Top eleman olarak isimlendirilir.
-   * Listeye her eleman eklenmesinde eklenen eleman Top eleman olur.
-   * Listeden her eleman silindiğinde bir gerideki eleman Top eleman haline gelir.
-   *
-   *
-   */
+	int selection;
+	int number;
 
-  int selection;
-  int number;
-  int minuend;
-  int topElement;
+	do {
+		Menu();
 
-  do {
-    printf("\n 0- End Programme");
-    printf("\n 1- Push");
-    printf("\n 2- Pop");
-    printf("\n 3- Peek");
-    printf("\n 4- Print");
-    printf("\n Make a selection: ");
-    scanf("%d", &selection);
+		printf(" Insert the function number that you want to execute: ");
+		scanf("%d", &selection);
 
-    switch (selection)
-    {
-    case 0:
-      printf("\n Programme ended successfully!\a");
-      break;
-    case 1:
-      printf("\n Insert a number that you wanna add: ");
-      scanf("%d", &number);
-      Push(number);
-      break;
-    case 2:
-      minuend = Pop();
-      printf("\n %d has removed from stack...\n", minuend);
-      break;
-    case 3:
-      topElement = Peek();
-      printf("\n Top element of array is: %d\n", topElement);
-      break;
-    case 4:
-      Print();
-      break;
-    }
-  } while (selection != 0);
-  
-  return 0;
+		switch (selection)
+		{
+		case 0:
+			printf("\n Process has been ended.\n");
+			break;
+		case 1:
+			printf("\n Enter a number: ");
+			scanf("%d", &number);
+			Push(number);
+			break;
+		case 2:
+			Pop();
+			break;
+		case 3:
+			printf("\n Top data of the stack is: %d", Peek());
+			break;
+		case 4:
+			PrintStack();
+			break;
+		default:
+			printf("\n Undefined number, please insert a number that stated at the menu.");
+			break;
+		}
+	} while (selection != 0);
+
+	getch();
+	return 0;
 }
