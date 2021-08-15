@@ -38,9 +38,7 @@ void Push(int data)
 
 int Pop()
 {
-	bool isEmpty = IsEmpty();
-
-	if (isEmpty == true)
+	if (IsEmpty() == true)
 	{
 		printf("\n Stack is empty right now.\n");
 		return 0;
@@ -107,8 +105,16 @@ int main()
 			Pop();
 			break;
 		case 3:
-			printf("\n Top data of the stack is: %d", Peek());
-			break;
+			if (IsEmpty() == true)
+			{
+				printf("\n There is no top data because Stack is empty right now.\n");
+				break;
+			}
+			else
+			{
+				printf("\n Top data of the stack is: %d", Peek());
+				break;
+			}
 		case 4:
 			PrintStack();
 			break;
