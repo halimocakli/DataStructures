@@ -48,7 +48,6 @@ int Dequeue()
 	if (IsEmpty() == true)
 	{
 		printf("\n Queue is empty right now.\n");
-		return 0;
 	}
 	else
 	{
