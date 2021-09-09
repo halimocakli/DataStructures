@@ -48,7 +48,6 @@ int Dequeue()
 	if (IsEmpty() == true)
 	{
 		printf("\n Queue is empty right now.\n");
-		return 0;
 	}
 	else
 	{
@@ -100,7 +99,6 @@ void PrintQueue()
 
 void Menu()
 {
-
 	printf(" \n-------------MENU-------------\n");
 	printf(" 0- EXIT\n");
 	printf(" 1- ENQUEUE\n");
