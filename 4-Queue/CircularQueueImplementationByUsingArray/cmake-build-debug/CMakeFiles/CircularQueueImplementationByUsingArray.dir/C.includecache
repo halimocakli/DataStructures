@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/halim/OneDrive/Desktop/UdemyDataStructures/Queue/CircularQueueImplementationByUsingArray/main.c
+conio.h
+-
+stdio.h
+-
+
