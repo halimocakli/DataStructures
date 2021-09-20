@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\CircularQueueImplementationByUsingArray.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\CircularQueueImplementationByUsingArray.dir/objects.a @CMakeFiles\CircularQueueImplementationByUsingArray.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\CircularQueueImplementationByUsingArray.dir/objects.a -Wl,--no-whole-archive -o CircularQueueImplementationByUsingArray.exe -Wl,--out-implib,libCircularQueueImplementationByUsingArray.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CircularQueueImplementationByUsingArray.dir\linklibs.rsp
