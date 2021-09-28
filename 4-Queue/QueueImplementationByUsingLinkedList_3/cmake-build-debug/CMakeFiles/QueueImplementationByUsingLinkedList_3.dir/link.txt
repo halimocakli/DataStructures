@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\QueueImplementationByUsingLinkedList_3.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\QueueImplementationByUsingLinkedList_3.dir/objects.a @CMakeFiles\QueueImplementationByUsingLinkedList_3.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\QueueImplementationByUsingLinkedList_3.dir/objects.a -Wl,--no-whole-archive -o QueueImplementationByUsingLinkedList_3.exe -Wl,--out-implib,libQueueImplementationByUsingLinkedList_3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\QueueImplementationByUsingLinkedList_3.dir\linklibs.rsp
