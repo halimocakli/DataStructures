@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ConvertingBSTreeToAVL.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\ConvertingBSTreeToAVL.dir/objects.a @CMakeFiles\ConvertingBSTreeToAVL.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\ConvertingBSTreeToAVL.dir/objects.a -Wl,--no-whole-archive -o ConvertingBSTreeToAVL.exe -Wl,--out-implib,libConvertingBSTreeToAVL.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ConvertingBSTreeToAVL.dir\linklibs.rsp
