@@ -1,0 +1,3 @@
+C:/Users/halim/OneDrive/Desktop/DataStructures/Stack/PostfixEvaluationByUsingStack/cmake-build-debug/CMakeFiles/PostfixEvaluationByUsingStack.dir
+C:/Users/halim/OneDrive/Desktop/DataStructures/Stack/PostfixEvaluationByUsingStack/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/halim/OneDrive/Desktop/DataStructures/Stack/PostfixEvaluationByUsingStack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
