@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\PostfixImplementationsByUsingStack.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\PostfixImplementationsByUsingStack.dir/objects.a @CMakeFiles\PostfixImplementationsByUsingStack.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\PostfixImplementationsByUsingStack.dir/objects.a -Wl,--no-whole-archive -o PostfixImplementationsByUsingStack.exe -Wl,--out-implib,libPostfixImplementationsByUsingStack.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\PostfixImplementationsByUsingStack.dir\linklibs.rsp
