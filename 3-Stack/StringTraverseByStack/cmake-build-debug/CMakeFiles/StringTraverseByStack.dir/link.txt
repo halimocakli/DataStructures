@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\StringTraverseByStack.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\StringTraverseByStack.dir/objects.a @CMakeFiles\StringTraverseByStack.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\StringTraverseByStack.dir/objects.a -Wl,--no-whole-archive -o StringTraverseByStack.exe -Wl,--out-implib,libStringTraverseByStack.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\StringTraverseByStack.dir\linklibs.rsp
