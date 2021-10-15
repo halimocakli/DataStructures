@@ -1,0 +1,3 @@
+C:/Users/halim/OneDrive/Desktop/UdemyDataStructures/Stack/StringTraverseByStack/cmake-build-debug/CMakeFiles/StringTraverseByStack.dir
+C:/Users/halim/OneDrive/Desktop/UdemyDataStructures/Stack/StringTraverseByStack/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/halim/OneDrive/Desktop/UdemyDataStructures/Stack/StringTraverseByStack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
