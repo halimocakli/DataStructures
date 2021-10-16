@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/halim/OneDrive/Desktop/DataStructures/Graphs/GraphImplementationUsingAdjacencyList/main.c
+conio.h
+-
+stdio.h
+-
+stdlib.h
+-
+
