@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\HeapImplementationUsingPriorityQueue.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\HeapImplementationUsingPriorityQueue.dir/objects.a @CMakeFiles\HeapImplementationUsingPriorityQueue.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\HeapImplementationUsingPriorityQueue.dir/objects.a -Wl,--no-whole-archive -o HeapImplementationUsingPriorityQueue.exe -Wl,--out-implib,libHeapImplementationUsingPriorityQueue.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\HeapImplementationUsingPriorityQueue.dir\linklibs.rsp
