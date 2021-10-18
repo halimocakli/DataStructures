@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/halim/OneDrive/Desktop/DataStructures/Heap/HeapImplementationUsingPriorityQueue/main.c
+conio.h
+-
+limits.h
+-
+stdio.h
+-
+stdlib.h
+-
+
