@@ -30,13 +30,13 @@ int main()
 	do
 	{
 		printf("\n *********** MENU *********** ...");
-		printf("\n 0- End execution");
+		printf("\n 0- End the execution");
 		printf("\n 1- Add node to head");
 		printf("\n 2- Add node to tail");
-		printf("\n 3- Add node to list by using position info");
+		printf("\n 3- Add node to the list by using position info");
 		printf("\n 4- Delete from head");
 		printf("\n 5- Delete from tail");
-		printf("\n 6- Delete node from list by using position info");
+		printf("\n 6- Delete node from the list by using position info");
 		printf("\n 7- Locate a node in the list");
 		printf("\n 8- Display the list");
 		printf("\n\n Select a function: ");
@@ -47,23 +47,23 @@ int main()
 		case 0:
 			printf("\n Execution has been ended.\n");
 			break;
-			
+
 		case 1:
-			printf("\n Insert a data number of node: ");
+			printf("\n Insert the number of node data: ");
 			scanf("%d", &number);
 			InsertToHead(number);
 			break;
 
 		case 2:
-			printf("\n Insert a data number of node: ");
+			printf("\n Insert the number of node data: ");
 			scanf("%d", &number);
 			InsertToTail(number);
 			break;
 
 		case 3:
-			printf("\n Insert a data number of node: ");
+			printf("\n Insert the number of node data: ");
 			scanf("%d", &number);
-			printf("\n Insert position that you will add the node: ");
+			printf("\n Insert the position that you will add the node: ");
 			scanf("%d", &position);
 			InsertToPosition(position, number);
 			break;
@@ -83,7 +83,7 @@ int main()
 			break;
 
 		case 7:
-			printf("\n Insert the node data number that you want to locate: ");
+			printf("\n Insert the number of node data that you want to locate: ");
 			scanf("%d", &number);
 			Locate(number);
 			break;
@@ -166,7 +166,7 @@ void InsertToPosition(int position, int number)// Son konumdan bir önceki konum
 	}
 	else if (head == NULL && position > 0)
 	{
-		printf(" There is no Node in the list so that is impossible to determine any position of the list.\n\n");
+		printf(" There is no node in the list so that is impossible to determine any position of the list.\n\n");
 		return;
 	}
 	else
