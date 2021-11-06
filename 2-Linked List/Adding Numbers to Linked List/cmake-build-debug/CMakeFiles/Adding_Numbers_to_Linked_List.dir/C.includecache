@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/halim/OneDrive/Belgeler/GitHub/DataStructures/2-Linked List/Adding Numbers to Linked List/main.c
+conio.h
+-
+stdio.h
+-
+stdlib.h
+-
+
