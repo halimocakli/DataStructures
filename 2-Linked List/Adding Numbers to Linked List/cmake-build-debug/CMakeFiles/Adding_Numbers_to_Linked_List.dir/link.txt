@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Adding_Numbers_to_Linked_List.dir/objects.a
+C:\mingw64\bin\ar.exe cr CMakeFiles\Adding_Numbers_to_Linked_List.dir/objects.a @CMakeFiles\Adding_Numbers_to_Linked_List.dir\objects1.rsp
+C:\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Adding_Numbers_to_Linked_List.dir/objects.a -Wl,--no-whole-archive -o Adding_Numbers_to_Linked_List.exe -Wl,--out-implib,libAdding_Numbers_to_Linked_List.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Adding_Numbers_to_Linked_List.dir\linklibs.rsp
