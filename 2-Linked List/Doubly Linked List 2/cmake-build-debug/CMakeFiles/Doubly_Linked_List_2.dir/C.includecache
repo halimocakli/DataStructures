@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/halim/OneDrive/Belgeler/GitHub/DataStructures/2-Linked List/Doubly Linked List 2/main.c
+conio.h
+-
+stdio.h
+-
+stdlib.h
+-
+
