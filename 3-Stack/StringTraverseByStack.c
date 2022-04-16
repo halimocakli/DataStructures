@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
+#define BOYUT 50
 #define SIZE 50
 
 char letters[SIZE];
